@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/userInformation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/contentPhoto">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:src="@drawable/user"
+            android:layout_gravity="center"
+            android:layout_margin="7.5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_gravity="center"
+            android:layout_weight="9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="User name"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/contentPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userInformation"/>
+
+    <LinearLayout
+        android:id="@+id/item_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contentPhoto">
+        <ImageView
+            android:id="@+id/content_favorite"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_favorite_border"/>
+        <ImageView
+            android:id="@+id/content_comment"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_chat_black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/item_status">
+        <TextView
+            android:id="@+id/favorite_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Llke 0"/>
+        <TextView
+            android:id="@+id/item_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explain content"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

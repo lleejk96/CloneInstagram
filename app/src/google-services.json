@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "733223252250",
+    "project_id": "cloneinstag-598a1",
+    "storage_bucket": "cloneinstag-598a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733223252250:android:1b9e870a45d62b2792bca3",
+        "android_client_info": {
+          "package_name": "com.gitauto.cloneinstgram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733223252250-t0bftfft0qo8birf41tbtcp4ksg77ev8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gitauto.cloneinstgram",
+            "certificate_hash": "3e3219a2f1f781e171fc51f16f8df0b1dff7f24a"
+          }
+        },
+        {
+          "client_id": "733223252250-p6g9hrp1qsg6feq53o504jifugomgtu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ2xs-TijZI9zy7TEjQztWzqiqor5tcok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733223252250-p6g9hrp1qsg6feq53o504jifugomgtu1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
